@@ -7,7 +7,7 @@ body{
     margin: auto;
 }
 
-button{
+div > button{
     max-width:  100px;
     margin: auto;
     margin-top: 0.5rem;
