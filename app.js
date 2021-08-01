@@ -32,13 +32,17 @@ checkButton.addEventListener("click", ()=> {
 
     clearNoOfNotes();
     if(invoiceAmtValue > 0  && cashAmtValue > 0){
-        // displayErrorMsg("Bill amount is less than cash given");
+        
 
         if(invoiceAmtValue < cashAmtValue ){
             changeReturnDiv.style.display = "block";
             calculateChange(invoiceAmtValue,cashAmtValue);
+
         }else if(invoiceAmtValue == cashAmtValue) {
             displayErrorMsg("No Amount to be returned");
+            
+        }else if(invoiceAmtValue > cashAmtValue){
+            displayErrorMsg("Bill Amount is greater than Cash Given Amount")
         }
 
     }else{
