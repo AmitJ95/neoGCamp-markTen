@@ -1,5 +1,6 @@
 *{
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 .container{
@@ -7,6 +8,7 @@
     align-content: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
     max-width: 500px;
     margin: auto;
     text-align: center;
@@ -18,7 +20,7 @@
 
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 40%;
+
 }
 
 div > button{
@@ -50,6 +52,23 @@ input:focus{
 }
 
 
-table{
+.changeReturn table,th,td{
+    padding: 0.2rem;
     border-collapse: collapse;
+    border: 2px solid whitesmoke;
+    
+}
+
+th, td{
+    padding: 0.2rem;
+    word-wrap: break-word;
+
+}
+
+.label{
+    padding: 0.5rem;
+}
+
+.notes{
+    
 }
